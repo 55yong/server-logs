@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ".env"
+source .env
 
 YEAR=$(date +%Y)
 MONTH=$(date +%m)

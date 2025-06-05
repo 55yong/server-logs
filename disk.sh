@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ".env"
+source .env
 
 mkdir -p "$LOG_DIR"
 DATE=$(date +"%Y-%m-%d")
