@@ -2,6 +2,10 @@
 
 source "$(dirname "$0")/.env"
 
+if [! -d "$REPO_DIR" ]; then
+    mkdir "$REPO_DIR"
+fi
+
 # 오늘 날짜
 DATE=$(date +"%Y-%m-%d")
 DATE_DIR="$REPO_DIR/$DATE"
