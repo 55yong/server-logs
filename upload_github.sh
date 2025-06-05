@@ -35,6 +35,7 @@ fi
 cd "$REPO_DIR"
 
 # Git 작업
-git add *
+git add .
 git commit -m "Add system logs for $DATE"
+git branch main $HOSTNAME
 git push origin $HOSTNAME
