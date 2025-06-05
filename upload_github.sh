@@ -1,11 +1,7 @@
 #!/bin/bash
 
-HOSTNAME=$(hostname)
+source ".env"
 
-# GitHub 리포지토리 경로
-REPO_DIR=/root/server-logs/$HOSTNAME
-# 로그 파일이 저장된 경로
-LOG_DIR=/var/log/system
 # 오늘 날짜
 DATE=$(date +"%Y-%m-%d")
 DATE_DIR="$REPO_DIR/$DATE"
