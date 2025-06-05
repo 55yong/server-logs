@@ -2,7 +2,7 @@
 
 source "$(dirname "$0")/.env"
 
-if [! -d "$REPO_DIR" ]; then
+if [ ! -d "$REPO_DIR" ]; then
     mkdir "$REPO_DIR"
 fi
 
@@ -43,5 +43,3 @@ git add .
 git commit -m "Add system logs for $DATE"
 git switch -c $HOSTNAME
 git push origin $HOSTNAME
-git switch main
-git branch -D $HOSTNAME
