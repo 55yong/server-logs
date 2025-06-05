@@ -39,3 +39,5 @@ git add .
 git commit -m "Add system logs for $DATE"
 git branch main $HOSTNAME
 git push origin $HOSTNAME
+git switch main
+git branch -D $HOSTNAME
