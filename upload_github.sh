@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source .env
+source "$(dirname "$0")/.env"
 
 # 오늘 날짜
 DATE=$(date +"%Y-%m-%d")
