@@ -43,5 +43,4 @@ git fetch
 git pull
 git add .
 git commit -m "Add system logs for $DATE"
-git switch -c $HOSTNAME
-git push origin $HOSTNAME
+git push origin main
