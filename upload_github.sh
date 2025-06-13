@@ -40,7 +40,7 @@ cd "$REPO_DIR"
 
 # Git 작업
 git fetch
-git pull
+git pull --no-edit
 git add .
 git commit -m "Add system logs for $DATE"
 git push origin main
