@@ -42,5 +42,5 @@ cd "$REPO_DIR"
 git fetch
 git pull --no-edit
 git add .
-git commit -m "Add system logs for $DATE"
+git commit -m "Add $HOSTNAME logs for $DATE"
 git push origin main
