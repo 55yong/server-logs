@@ -35,3 +35,4 @@ echo "MEM usage(%): $MEM_AVG" >> "$OUT_FILE"
 echo $(disk_usage "/")  >> "$OUT_FILE"
 
 echo "Uptime: $UPTIME" >> "$OUT_FILE"
+echo "" >> "$OUT_FILE"
