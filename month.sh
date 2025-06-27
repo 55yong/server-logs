@@ -7,7 +7,7 @@ MONTH=$(date +%m)
 OUT_FILE="$LOG_DIR/monthly_${YEAR}-${MONTH}.log"
 
 # 대상 파일 목록 (예: summary_2025-06-01.log ~ summary_2025-06-30.log)
-FILES=$(ls "$LOG_DIR"/summary_${YEAR}-${MONTH}-*.log 2>/dev/null)
+FILES=$(ls "$LOG_DIR"/daily_${YEAR}-${MONTH}-*.log 2>/dev/null)
 
 # 초기값
 cpu_sum=0
