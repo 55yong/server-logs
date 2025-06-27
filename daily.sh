@@ -4,7 +4,7 @@ source "$(dirname "$0")/.env"
 
 DATE=$(date +"%Y-%m-%d")
 
-COLLECT_FILE="$LOG_DIR/colelct_$DATE.log"
+COLLECT_FILE="$LOG_DIR/collect_$DATE.log"
 OUT_FILE="$LOG_DIR/daily_$DATE.log"
 
 # === CPU 평균 계산 ===
