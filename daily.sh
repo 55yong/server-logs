@@ -4,12 +4,12 @@ source "$(dirname "$0")/.env"
 
 DATE=$(date +"%Y-%m-%d")
 
-CPU_MEM_FILE="$LOG_DIR/cpu_mem_$DATE.log"
-OUT_FILE="$LOG_DIR/summary_$DATE.log"
+COLLECT_FILE="$LOG_DIR/colelct_$DATE.log"
+OUT_FILE="$LOG_DIR/daily_$DATE.log"
 
 # === CPU 평균 계산 ===
-CPU_AVG=$(awk -F'CPU:' '{split($2,a,","); sum+=a[1]; n++} END {if(n>0) printf "%.2f", sum/n; else print "N/A"}' "$CPU_MEM_FILE")
-MEM_AVG=$(awk -F'MEM:' '{sum+=$2; n++} END {if(n>0) printf "%.2f", sum/n; else print "N/A"}' "$CPU_MEM_FILE")
+CPU_AVG=$(awk -F'CPU:' '{split($2,a,","); sum+=a[1]; n++} END {if(n>0) printf "%.2f", sum/n; else print "N/A"}' "$COLLECT_FILE")
+MEM_AVG=$(awk -F'MEM:' '{sum+=$2; n++} END {if(n>0) printf "%.2f", sum/n; else print "N/A"}' "$COLLECT_FILE")
 
 # === 디스크 평균 계산 함수 ===
 disk_usage() {
