@@ -11,7 +11,7 @@ DATE=$(date +"%Y-%m-%d")
 DATE_DIR="$REPO_DIR/$DATE"
 # 월
 MONTH=$(date +"%Y-%m")
-MONTHLY_FILE="monthly_summary_${MONTH}.log"
+MONTHLY_FILE="monthly_${MONTH}.log"
 
 # 복사 대상 로그 파일들
 FILES=(
