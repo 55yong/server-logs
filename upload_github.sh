@@ -15,8 +15,7 @@ MONTHLY_FILE="monthly_${MONTH}.log"
 
 # 복사 대상 로그 파일들
 FILES=(
-  "cpu_mem_$DATE.log"
-  "disk_detail_$DATE.log"
+  "collect_$DATE.log"
   "summary_$DATE.log"
 )
 
