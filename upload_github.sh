@@ -15,8 +15,8 @@ MONTHLY_FILE="monthly_${MONTH}.log"
 
 # 복사 대상 로그 파일들
 FILES=(
-  "collect_$DATE.log"
-  "summary_$DATE.log"
+  "cpu_mem_$DATE.log"
+  "daily_$DATE.log"
 )
 
 # 오늘 날짜 디렉토리 생성
