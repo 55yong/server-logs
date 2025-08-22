@@ -6,8 +6,8 @@ if [ ! -d "$REPO_DIR" ]; then
     mkdir "$REPO_DIR"
 fi
 
-# 오늘 날짜
-DATE=$(date +"%Y-%m-%d")
+# 어제 날짜
+DATE=$(date -d "yesterday" +"%Y-%m-%d")
 DATE_DIR="$REPO_DIR/$DATE"
 # 월
 MONTH=$(date +"%Y-%m")
