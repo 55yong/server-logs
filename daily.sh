@@ -33,6 +33,7 @@ echo "CPU usage(%): $CPU_AVG" >> "$OUT_FILE"
 echo "MEM usage(%): $MEM_AVG" >> "$OUT_FILE"
 
 echo $(disk_usage "/")  >> "$OUT_FILE"
+echo $(disk_usage "/mnt/pve/backup")  >> "$OUT_FILE"
 
 echo "Uptime: $UPTIME" >> "$OUT_FILE"
 echo "" >> "$OUT_FILE"
